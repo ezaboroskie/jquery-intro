@@ -8,17 +8,20 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous">
     </script>
+    <script src="scripts.js">
+    </script>
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body style="display: flex; flex-direction: column; align-items: center;">
 
-    <div id="header-container" style="position: sticky; top: 0; cursor: pointer; display: flex; justify-content: space-evenly; width: 100vw; ">
+    <div id="header-container">
         <span class="header-link">Home</span>
         <span class="header-link">Contact</span>
         <span class="header-link">About Us</span>
     </div>
-    <main id="main-container" style="display: flex; flex-direction: column;width: 100vw; min-height: 100vh; align-items: center; ">
-        <div id="body-content-container" style="padding-top: 150px">
+    <main id="main-container">
+        <div id="body-content-container">
             <div id="home-body-item" class="body-content">
                 <h3>Welcome to the home page!</h3>
                 <p>Here you'll find home related things</p>
@@ -35,27 +38,17 @@
                 <p>We're a web development company</p>
                 <p>...well I guess there isn't much to us</p>
             </div>
+            <iframe id="mj-gif" src="https://giphy.com/embed/LAKIIRqtM1dqE" width="480" height="358" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/giphyqa-LAKIIRqtM1dqE"></a></p>
         </div>
     </main>
-    <div id="footer-container" style="position: sticky; bottom:0;cursor: pointer; display: flex; justify-content: space-evenly; width: 100vw;">
+
+    <div id="footer-container" style="">
         <span class="footer-link">Help</span>
         <span class="footer-link">Terms of Service</span>
         <span class="footer-link">Careers</span>
     </div>
 
-    <script>
 
-        $(document).ready(function(){
-            $(".body-content").hide();
-            $(".header-link").click(function(){
-                $(".body-content").hide()
-                let index = $(this).index()
-                $(".body-content").eq(index).show()
-            })
-        })
-
-
-    </script>
 
 
     
